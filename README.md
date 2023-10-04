@@ -52,7 +52,8 @@ This script takes a google maps shortlink, expands it to a normal long URL with 
 12. Create a new col named "Coords String" in col K
 13. Type this in K2: `=ParseCoords(J2)` and then fill down for all values
 14. Now you should have all the coordinate pair strings like this `0.418529,32.428218`
-15. These _may_ need to be parsed into separate columns (delimited by the comma) ... need to test that 
+15. Copy-paste parsed coord string values overtop of the forumlas. This is necessary because _**otherwise, whenever you refresh the page or sort, or filter, the formulas recalculate and that can cost performance.**_ Once you have the correct values, you don't need the formulas anymore so dump em. #GOTCHA
+16. These _may_ need to be parsed into separate columns (delimited by the comma) ... need to test that 
 
 ## Requires
 
